@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading please wait</title>
+    <title>3D Model Display</title>
 </head>
 <body>
-    <h1>Loading please wait</h1>
+    <h1>Chùa Một Cột</h1>
     <iframe src="https://3dwarehouse.sketchup.com/embed/8433169b-790a-408a-af0e-a7e39c3fd453?token=LFZLDFwnwAE=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+    <iframe id="model3d" src="..." frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+
+    <script>
+        // Khi window tải xong, thực hiện hàm bên trong
+        window.onload = function() {
+            // Tự động "click" vào iframe nếu có thể
+            var iframe = document.getElementById('model3d');
+            iframe.click();
+        };
+    </script>
 </body>
 </html>
 
