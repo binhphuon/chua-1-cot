@@ -12,11 +12,14 @@
 
     <script>
         // Khi window tải xong, thực hiện hàm bên trong
-        window.onload = function() {
-            // Tự động "click" vào iframe nếu có thể
-            var iframe = document.getElementById('model3d');
-            iframe.click();
-        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var button = document.querySelector('.view-btn'); // Sử dụng selector phù hợp để chọn nút
+          if (button) {
+            button.click(); // Tự động kích hoạt sự kiện click trên nút
+          }
+        });
+
     </script>
 </body>
 </html>
